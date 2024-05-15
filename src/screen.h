@@ -23,3 +23,7 @@ void show(String text) {
   display.println(text);
   display.display(); 
 }
+
+void invert(bool inv) {
+  display.invertDisplay(inv);
+}

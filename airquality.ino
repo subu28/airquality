@@ -28,12 +28,13 @@ void setup()
 // start display
   startScreen();
   show("Hello, World");
+  delay(30000);
 
 }
 
 void loop()
 {
-  delay(60000);
+  delay(30000);
   Serial.println("running...");
   
   uint16_t co2 = 0;
@@ -49,6 +50,9 @@ void loop()
   char Wifi = upload(temperature, humidity, co2, dusts[0], dusts[1], dusts[2], tvoc);
 
   String out = "T:" + String(temperature) + " CO2:" + String(co2) + " H:" + String(humidity) + " PM1:" + String(dusts[0]) + " PM2.5:" + String(dusts[1]) + " PM10:" + String(dusts[2]) + " tvoc:" + String(tvoc) + " W:" + String(Wifi);
+  invert(false);
   show(out);
+  delay(30000);
+  invert(true);
 
 }
