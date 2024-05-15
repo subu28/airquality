@@ -42,7 +42,7 @@ For CO2 sensor I bought SCD40. It is manufactured by Sensiron and available for 
 [SCD40 datasheet](/readme-files/scd4x.pdf)
 
 #### TVOC Sensor
-TVOC refers to Total Volatile Organic Compounds. This should give an idea of paint fumes and other solvents in the air. I bought AGS02MA for this. It uses low bitrate communication which could be a problem if the controller chosen is not compatible. ESP32 has good library support and supports the required bitrates. This sensor needs to warm up before the readings stabilize. Typically after a long idle it will take about 15~20 minutes to become stable. I observed that it is sensitive to voltage fluctuations and sometimes it would not start after a quick power cycle. I usually end up switching off the monitor for 5~10 minutes before switching back on.
+TVOC refers to Total Volatile Organic Compounds. This should give an idea of paint fumes and other solvents in the air. I bought AGS02MA for this. It uses low bitrate communication which could be a problem if the controller chosen is not compatible. ESP32 has good library support and supports the required bitrates. This sensor needs to warm up before the readings stabilize. Typically after a long idle it will take about 15 to 20 minutes to become stable. I observed that it is sensitive to voltage fluctuations and sometimes it would not start after a quick power cycle. I usually end up switching off the monitor for 5 to 10 minutes before switching back on.
 
 ![end product](/readme-files/ags02ma.png)
 
