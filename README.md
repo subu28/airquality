@@ -89,3 +89,8 @@ Connect the vcc and ground to 5v and ground respectively and the sda and scl to 
 
 #### WiFi and dashboards
 Code for this is available in src/upload.h. For my monitor I have added username and password for couple of my available hotspots. A WiFi client is created which attempts to connect to the hotspots if not already connected before logging data. The data is sent to a promethius push gateway on because I want to be able to push the data instead of pulling from promethius. Then promethius ingests the data and finally grafana connects to the promethius and generates the graphs. Setting up the promethius and grafana are not part of this repo. You can modify the code to send your data to other locations as per your requirement.
+
+## Case Design
+For case design we need to ensure the sensors are gtting ample fresh air to measure. Hence I have designed the case with bunch of spaces for air to enter and exit. Plus the heat needs to be dissipated for sensors to work optimally. My design has side vents for dust sensor to exchange air. The dust sensor has a fan of its own as well.
+
+The CO2 and TVOC sensor are at the bottom with access to fresh air from bottom front vent and then the air can rise up along the microcontroller where it can absorb some heat from the controller and escape from the top exit at the back. There is a small display window at the front for the display to be read.
