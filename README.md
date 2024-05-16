@@ -13,7 +13,7 @@ To begin with I was looking for a few affordable monitors to purchase but as wit
 ## End Product
 ![end product](/readme-files/finished.png)
 
-The monitor is Xcm * Ycm * Zcm in size. Runs on any 5V micro usb power.
+The monitor is 5.8cm * 4.4cm * 9.0cm in size. Runs on any 5V micro usb power.
 
 Data is logged by calling a HTTP API. In my implementation its a call to a promethius gateway running on a Raspberry PI server in my home network. There is Promethius and Grafana running on the same PI server. I have a dashboard on grafana that looks like this.
 
