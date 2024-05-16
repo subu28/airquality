@@ -94,3 +94,7 @@ Code for this is available in src/upload.h. For my monitor I have added username
 For case design we need to ensure the sensors are gtting ample fresh air to measure. Hence I have designed the case with bunch of spaces for air to enter and exit. Plus the heat needs to be dissipated for sensors to work optimally. My design has side vents for dust sensor to exchange air. The dust sensor has a fan of its own as well.
 
 The CO2 and TVOC sensor are at the bottom with access to fresh air from bottom front vent and then the air can rise up along the microcontroller where it can absorb some heat from the controller and escape from the top exit at the back. There is a small display window at the front for the display to be read.
+
+[STL files for 3d printing](/readme-files/assembly.zip)
+
+![case assembly](/readme-files/assembly.png)
